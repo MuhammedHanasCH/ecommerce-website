@@ -4,28 +4,29 @@ const searchBtn = document.getElementById('search-btn');
 const loadingSpinner = document.getElementById('loading-spinner');
 const noResultsMessage = document.getElementById('no-results-message');
 
-// Show Loading Spinner
+// Showing Loading Spinner
 const showLoadingSpinner = () => {
   loadingSpinner.style.display = 'block';
-  productList.innerHTML = ''; // Clear product list while loading
+  productList.innerHTML = '';
 };
 
-// Hide Loading Spinner
+// Hiding Loading Spinner
 const hideLoadingSpinner = () => {
   loadingSpinner.style.display = 'none';
 };
 
-// Display No Results Message
+// Displaying No Results Message
 const showNoResultsMessage = () => {
   noResultsMessage.style.display = 'block';
 };
 
-// Hide No Results Message
+// Hiding No Results Message
 const hideNoResultsMessage = () => {
   noResultsMessage.style.display = 'none';
 };
 
-// Fetch products from API
+
+
 const fetchProducts = async () => {
   showLoadingSpinner();
   try {
@@ -42,7 +43,7 @@ const fetchProducts = async () => {
   }
 };
 
-// Display products
+
 const displayProducts = (products) => {
   hideLoadingSpinner();
   hideNoResultsMessage();
@@ -71,7 +72,8 @@ const displayProducts = (products) => {
   }
 };
 
-// Search functionality
+
+
 searchBtn.addEventListener('click', () => {
   const query = searchInput.value.toLowerCase();
   if (!query) return;
@@ -92,5 +94,6 @@ searchBtn.addEventListener('click', () => {
     });
 });
 
-// Initial fetch
+
+
 fetchProducts();

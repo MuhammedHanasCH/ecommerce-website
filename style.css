@@ -1,47 +1,45 @@
-/* Custom Styles */
 body {
   font-family: Arial, sans-serif;
 }
 
-/* Navbar Styling */
+
 .navbar-brand {
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-/* Product Grid Layout */
 #product-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px; /* Space between cards */
+  gap: 20px;
   justify-content: space-between;
 }
 
 .card {
-  width: 100%; /* Full width on mobile */
-  max-width: 300px; /* Max width for larger screens */
+  width: 100%;
+  max-width: 300px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   overflow: hidden;
   background-color: white;
   transition: transform 0.2s ease-in-out;
-  margin-bottom: 5px; /* Reduce space between rows of cards */
+  margin-bottom: 5px;
 }
 
 .card:hover {
-  transform: translateY(-5px); /* Slight hover effect */
+  transform: translateY(-5px);
 }
 
-/* Card Image Styling */
+
 .card-img-top {
   width: 100%;
-  height: 300px; /* Set a fixed height for the images */
-  object-fit: contain; /* Ensures the image fits inside the container without cropping */
-  object-position: center; /* Keeps the image centered */
+  height: 300px;
+  object-fit: contain;
+  object-position: center;
 }
 
 .card-body {
-  padding: 10px; /* Optional: Adjust padding inside the card */
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -61,20 +59,19 @@ body {
   margin-top: 10px;
 }
 
-/* Card Text Description Styling */
+
 .card-body .card-text {
-  font-size: 0.9rem; /* Adjust font size of description */
-  color: #666; /* Make the description color lighter */
-  height: 60px; /* Limit the height for the description */
-  overflow: hidden; /* Hide extra text */
+  font-size: 0.9rem;
+  color: #666;
+  height: 60px;
+  overflow: hidden;
 }
 
 .d-flex a {
-  width: 48%; /* Make the buttons a little narrower */
-  font-size: 0.8rem; /* Smaller font for buttons */
+  width: 48%;
+  font-size: 0.8rem;
 }
 
-/* Footer Styling */
 footer {
   font-size: 0.9rem;
 }
@@ -82,8 +79,8 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
   .card {
-    width: 100%; /* Full width on smaller screens */
-    max-width: none; /* Remove max-width */
+    width: 100%;
+    max-width: none;
   }
 }
 
